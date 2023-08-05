@@ -10,7 +10,7 @@ export const Item = styled.li`
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 `;
 
-const getIsOnlineColor = ({ status }) => (status === 'true' ? 'green' : 'red');
+const getIsOnlineColor = ({ $status }) => ($status === 'true' ? 'green' : 'red');
 
 export const Status = styled.span`
   background-color: ${getIsOnlineColor};
