@@ -1,9 +1,9 @@
 import { StatisticsSection,Title, StatList, Item,Label,Percentage  } from './Statistics.styled';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ stats, title }) => {
   return (
     <StatisticsSection>
-      <Title>Upload stats</Title>
+      <Title>{title}</Title>
 
       <StatList>
         {stats.map(stat => (

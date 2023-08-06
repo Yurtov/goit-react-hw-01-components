@@ -36,17 +36,17 @@ export const Tbody = styled.tbody`
   /* :nth-child(odd) {
     background: #f3f3f3;
   } */
-  :nth-child(even) {
+  /* :nth-child(even) {
     background: #cee7eb;
-  }
+  } */
 
  
 `;
 
 export const Tr = styled.tr`
-  /* :nth-child(even) {
+  :nth-child(even) {
     background: #cee7eb;
-  } */
+  }
 `;
 
 export const Td = styled.td`
@@ -58,8 +58,5 @@ export const Td = styled.td`
   }
   :last-child {
     border-right: none;
-  }
-  :nth-child(even) {
-    background: #cee7eb;
   }
 `;
