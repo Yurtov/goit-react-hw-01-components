@@ -3,7 +3,7 @@ import { StatisticsSection,Title, StatList, Item,Label,Percentage  } from './Sta
 export const Statistics = ({ stats, title }) => {
   return (
     <StatisticsSection>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
 
       <StatList>
         {stats.map(stat => (
